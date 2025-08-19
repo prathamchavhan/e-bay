@@ -1,0 +1,187 @@
+.head{
+  color: #ff8025;
+  text-align: center;
+ margin-top: 100px; 
+
+ h2 {
+    font-weight: bold;
+  letter-spacing: 3px; /* increase spacing between letters */
+
+}
+
+}
+
+
+.career-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 0px;
+  padding: 0;
+  gap: 0;
+}
+
+.feature-card.left {
+  flex-direction: row;
+}
+
+.feature-card.right {
+  flex-direction: row-reverse;
+}
+
+.side-bar {
+  width: 10px;
+  background-color: #0b0b57; /* navy */
+  height: auto; /* full height of card */
+}
+
+.feature-bg {
+  position: relative;
+  width: 750px; /* bigger width */
+  height: 400px; /* bigger height */
+  background-size: contain; /* show whole image */
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-overlay {
+
+  padding: 20px;
+    position: absolute;
+    top: 50%;
+     left: 10%;    
+       transform: translateY(-50%);
+  max-width: 400px; /* Limit width so it doesn’t spill over */
+  text-align: left;
+  color: black;   
+}
+
+.feature-overlay h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #f97316; /* orange */
+}
+
+.feature-overlay p {
+  font-size: 1.4rem;
+  color: #000000;
+}
+/* Animation defaults */
+.from-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.from-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+
+}
+
+
+.career-features .feature-card:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+section, .feature-card:first-child, .feature-card:last-child {
+  margin-top: 0;   /* no gap above first card */
+  margin-bottom: 0;/* no gap below last card */
+}
+@media (max-width: 768px) {
+  /* Remove sidebars for clean look */
+  .side-bar {
+    display: none;
+  }
+
+  /* Feature card styling */
+  .feature-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 16px 12px;
+    padding: 12px 16px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Slight scale-up on tap for subtle feedback */
+  .feature-card:active {
+    transform: scale(0.97);
+  }
+
+  /* Smooth fade-in + slide-up animation */
+  .feature-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .feature-card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  /* Stagger animation delay */
+  .feature-card:nth-child(1).show {
+    transition-delay: 0.1s;
+  }
+  .feature-card:nth-child(2).show {
+    transition-delay: 0.3s;
+  }
+  .feature-card:nth-child(3).show {
+    transition-delay: 0.5s;
+  }
+
+  /* Feature background image rounded and shadowed */
+  .feature-bg {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* Overlay text background with subtle translucent white */
+  .feature-overlay {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 14px 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #1a1a1a;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Headings styled simply */
+  .feature-overlay h3 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #f7751e;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  /* Paragraph with easy reading size */
+  .feature-overlay p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #444444;
+  }
+}

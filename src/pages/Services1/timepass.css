@@ -1,0 +1,164 @@
+.hero-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.video-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -3;
+}
+
+/* Blue polygon image in top-right */
+.polygon-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: auto;
+  z-index: -1;
+}
+
+/* White box with text */
+.content-box {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+
+  background: white;
+  padding: 20px 30px;
+  max-width: 490px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  border-left: 10px solid #00a3ff;
+  border-right: 5px solid #003b91;
+  z-index: 1;
+}
+
+.content-box h2 {
+  color: #ff7a00;
+  margin-bottom: 10px;
+}
+
+.content-box p {
+  font-size: 19px;
+  color: #000;
+  line-height: 1.5;
+}
+
+/* Man with laptop */
+.person-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 600px;
+  z-index: 2;
+}
+/* For tablets and smaller desktops */
+@media (max-width: 1024px) {
+  .hero-container {
+    height: 70vh;
+  }
+
+  .content-box {
+    top: 15%;
+    left: 10%;
+    max-width: 90%;
+    padding: 15px 20px;
+    border-left-width: 8px;
+    border-right-width: 3px;
+  }
+
+  .content-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+  }
+
+  .person-img {
+    height: 400px;
+  }
+
+  .polygon-img {
+    width: 60%;
+  }
+}/* 📱 Extra fine-tuned for <=760px */
+@media (max-width: 760px) {
+  .hero-container {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .content-box {
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 92%;
+    padding: 14px 18px;
+    text-align: center;
+  }
+
+  .person-img {
+    height: auto;
+    max-height: 320px;
+    margin: 15px auto 0 auto;
+    display: block;
+  }
+}
+
+/* 📱 For <=460px (smaller phones) */
+@media (max-width: 460px) {
+  .content-box {
+    padding: 16px 20px;
+    max-width: 94%;
+    border-radius: 14px;
+  }
+
+  .content-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-box p {
+    font-size: 1rem;
+  }
+
+  .person-img {
+    max-height: 260px;
+    width: 95%;
+  }
+}
+
+/* 📱 For <=360px (very small phones) */
+@media (max-width: 360px) {
+  .content-box {
+    padding: 14px 18px;
+    max-width: 96%;
+    border-radius: 12px;
+  }
+
+  .content-box h2 {
+    font-size: 1.2rem;
+  }
+
+  .content-box p {
+    font-size: 0.9rem;
+  }
+
+  .person-img {
+    max-height: 200px;
+    width: 100%;
+  }
+}
+/* Hide person image on responsive screens */
+@media (max-width: 1024px) {
+  .person-img {
+    display: none !important;
+  }
+}

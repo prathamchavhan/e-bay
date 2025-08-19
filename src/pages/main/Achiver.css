@@ -1,0 +1,182 @@
+/* ================= Base Layout ================== */
+
+/* Page background */
+.page-container {
+  min-height: 40vh;
+  background-color: black;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+/* Main glass container */
+.white-border-container {
+  border: 0.5px solid rgb(248, 248, 248);
+  outline: 2px solid rgb(212, 209, 209);
+  outline-offset: -2px;
+  border-radius: 0.75rem;
+  max-width: 1500px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+
+  box-shadow: 
+    inset -36px 36px 36px rgba(255, 255, 255, 0.1),
+    inset 36px -36px 36px rgba(165, 165, 165, 0.1),
+    inset 0px 0px 25px rgba(255, 255, 255, 0.08),
+    inset 0px 0px 50px rgba(255, 255, 255, 0.04);
+
+  backdrop-filter: blur(70px);
+  -webkit-backdrop-filter: blur(70px);
+}
+
+/* Inner content */
+.container-content {
+  padding: 1.8rem;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Flex layout */
+.flex-col-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Desktop (row layout) */
+@media (min-width: 1024px) {
+  .flex-col-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+  }
+
+  .benefits {
+    margin-left: 5rem;
+  }
+}
+
+/* ================= Headings ================== */
+
+.heading-section h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+/* Desktop adjustment */
+@media (min-width: 1024px) {
+  .heading-section h2 {
+    font-size: 2.9rem;
+  }
+}
+
+/* ================= Benefits ================== */
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Icon */
+.icon {
+  width: 47px;
+  height: 47px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.icon-img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* Text */
+.benefit-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.benefit-subtitle {
+  color: rgba(209, 213, 219, 1);
+  font-size: 1.1rem;
+  margin-left: 3px;
+}
+
+/* ================= Responsiveness ================== */
+
+/* Tablets (≤ 760px) */
+@media (max-width: 760px) {
+  .container-content {
+    padding: 1.2rem;
+  }
+  .flex-col-container {
+    gap: 1.5rem;
+  }
+  .benefits {
+    margin-left: 0;
+  }
+  .heading-section h2 {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    text-align: center;
+  }
+}
+
+/* Small Tablets / Large Phones (≤ 460px) */
+@media (max-width: 460px) {
+  .container-content {
+    padding: 1rem;
+  }
+  .benefit-item {
+    gap: 1rem;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .benefit-title {
+    font-size: 1rem;
+  }
+  .benefit-subtitle {
+    font-size: 0.95rem;
+  }
+  .heading-section h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
+
+/* Small Phones (≤ 360px) */
+@media (max-width: 360px) {
+  .container-content {
+    padding: 0.8rem;
+  }
+  .icon {
+    width: 35px;
+    height: 35px;
+  }
+  .benefit-title {
+    font-size: 0.95rem;
+  }
+  .benefit-subtitle {
+    font-size: 0.85rem;
+  }
+  .heading-section h2 {
+    font-size: 1.7rem;
+  }
+}

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+.career-section {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.career-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f37021;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.background-shape {
+  position: absolute;
+  z-index: 0;
+}
+
+.blue-gradient {
+  width: 900px;
+  height: 260px;
+  background: linear-gradient(to bottom, #03b6ec, #05e6d4);
+  top: 17px;
+  left: 200px;
+}
+
+.outline-gradient {
+  width: 700px;
+  height: 200px;
+  border: 10px solid transparent;
+  border-image: linear-gradient(to bottom, #03b6ec, #05e6d4) 1;
+  bottom: -30px;
+  right: 190px;
+}
+
+.career-card {
+  display: flex;
+  background: #fff;
+  width: 850px;
+  height: 260px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  
+}
+
+
+.career-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #000;
+}
+
+.career-text p {
+  margin: 0;
+}
+
+.career-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.career-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .blue-gradient {
+    width: 500px;
+    height: 150px;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .outline-gradient {
+    width: 500px;
+    height: 150px;
+    bottom: -30px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .career-card {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .career-text {
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .career-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .career-image img {
+    height: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .career-heading {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+  }
+
+  .blue-gradient,
+  .outline-gradient {
+    width: 300px;
+    height: 120px;
+  }
+
+  .career-text {
+    font-size: 0.95rem;
+    padding: 15px;
+  }
+}
+
+/* Very small phones (e.g. 320px) */
+@media (max-width: 400px) {
+  .career-heading {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+  }
+
+  .blue-gradient,
+  .outline-gradient {
+    width: 240px;
+    height: 100px;
+  }
+
+  .career-card {
+    width: 95%;
+  }
+
+  .career-text {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}

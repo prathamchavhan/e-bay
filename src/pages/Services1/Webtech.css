@@ -1,0 +1,190 @@
+.webtech-heading{
+  color: #ff6b00;
+  justify-content: center;
+  align-items: center;
+   text-align: center;
+   margin-bottom: 0; 
+}
+.webtech-two-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.webtech-text-side {
+  flex: 1;
+  min-width: 600px;
+  max-width: 600px;
+}
+
+.webtech-text-side ul {
+  list-style: disc;
+  padding-left: 20px;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  margin-top: 0;
+}
+
+.webtech-text-side .highlight {
+  color: #ff6b00;
+  font-weight: bold;
+}
+
+.webtech-image-side {
+  flex: 1;
+  min-width: 810px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.webtech-image-side img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  width: 100vw; /* Full viewport width */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw; /* Ensure it touches both edges */
+  margin-top: 1px; /* Increase gap from top */
+  margin-bottom: 50px;
+}.bottom-full-image img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+  margin-left: 0;
+  margin-right: auto; /* pushes image left in flex or block container */
+  border-radius: 4px; /* optional: soften edges */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* optional: subtle shadow */
+  margin-bottom: 80px;
+  margin-top: 40px;
+}
+
+.okoay{
+  padding-bottom: 100px; 
+   margin-bottom: 100px; 
+   text-align: center;
+   font-size: 20px;
+   color:#0D0360;
+
+}
+@media (max-width: 768px) {
+  /* Stack columns vertically, image on top */
+  .webtech-two-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+
+  /* Text side full width with padding */
+  .webtech-text-side {
+    max-width: 100%;
+    min-width: auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .webtech-text-side ul {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 0;
+  }
+
+  /* Image side full width and padding */
+  .webtech-image-side {
+    max-width: 100%;
+    min-width: auto;
+    padding: 0 20px;
+  }
+
+  /* Responsive image */
+  .webtech-image-side img {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 0 auto 40px auto;
+    position: static; /* remove previous relative positioning */
+    left: auto;
+    right: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Heading */
+  .webtech-heading {
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+    padding: 0 20px;
+    color: #ff6b00;
+  }
+
+  /* Bottom full image container */
+  .bottom-full-image {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 10px;
+  }
+
+  .bottom-full-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* Bottom text */
+  .okoay {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #0D0360;
+    text-align: center;
+    padding: 0 20px 100px 20px;
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+
+/* Smaller phones adjustments */
+@media (max-width: 360px) {
+  .webtech-text-side, .okoay {
+    font-size: 0.95rem;
+    padding: 0 15px;
+  }
+
+  .webtech-heading {
+    font-size: 1.6rem;
+    padding: 0 15px;
+  }
+
+  .bottom-full-image img {
+    height: 140px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 320px) {
+  .webtech-text-side, .okoay {
+    font-size: 0.9rem;
+    padding: 0 12px;
+  }
+
+  .webtech-heading {
+    font-size: 1.4rem;
+    padding: 0 12px;
+  }
+
+  .bottom-full-image img {
+    height: 120px;
+  }
+}

@@ -1,0 +1,217 @@
+.container {
+    margin-top: 100px;
+  display: flex;
+  max-width: 1200px;
+  height: 750px;
+  margin: 40px auto;
+  background: #fff;
+  border-top: none;
+  border-left: none;           /* no left border */
+  border-bottom: none;
+  border-right: 1px solid #ccc; /* only right border */
+  border-top-right-radius: 10px;    /* optional rounded corners on right */
+  border-bottom-right-radius: 10px; /* optional rounded corners on right */
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+.left-image {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: 0;
+  padding: 0;
+  display: flex;  
+         /* Make container a flexbox */
+}
+
+.left-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;         /* Important: prevents inline whitespace */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.right-form {
+  flex: 1;
+  padding: 50px 60px;      /* increased padding */
+  display: flex;
+  flex-direction: column;
+}
+
+.right-form h2 {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 32px;         /* larger heading */
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;               /* increased gap between inputs */
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px 20px;      /* bigger input padding */
+  font-size: 16px;         /* larger font size */
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #4a44f0;
+}
+
+button {
+  border: 1px solid #d17f39;
+  background: none;
+  color: black;
+  padding: 12px 0;         /* taller button */
+  font-size: 16px;         /* bigger font */
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    to right,
+    #d17f39 50%,
+    #1b1464 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  background-position: left bottom;
+}
+/* styles.css */
+.submit-btn {
+  border: 1px solid #d17f39;
+  background: linear-gradient(to right, #d17f39 50%, #1b1464 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: white;
+  font-weight: 600;
+  padding: 12px 0;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  font-size: 15px;          /* slightly bigger */
+  text-align: center;
+}
+
+.success {
+  color: green;
+  font-size: 15px;          /* slightly bigger */
+  text-align: center;
+}
+/* Existing CSS here... */
+
+/* Mobile Responsive Styles */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;  /* stack vertically on tablets and smaller */
+    height: auto;            /* let height grow naturally */
+    max-width: 90vw;         /* smaller max width */
+    margin-top: 60px;        /* reduce top margin on smaller screens */
+    border-radius: 10px;     /* keep rounding */
+    border-right: none;      /* remove right border for vertical stack */
+  }
+
+  .left-image,
+  .right-form {
+    flex: none;              /* reset flex */
+    width: 100%;             /* full width */
+    border-radius: 0;        /* remove individual rounding */
+  }
+
+  .left-image {
+    height: 250px;           /* fix image height for mobile */
+    border-top-left-radius: 10px;    /* rounding on top corners */
+    border-top-right-radius: 10px;
+  }
+
+  .left-image img {
+    border-radius: 10px 10px 0 0;   /* round top corners only */
+  }
+
+  .right-form {
+    padding: 30px 20px;      /* reduce padding */
+    border-bottom-left-radius: 10px; /* rounding on bottom corners */
+    border-bottom-right-radius: 10px;
+    background: #fff;
+  }
+
+  .right-form h2 {
+    font-size: 26px;         /* smaller heading */
+    margin-bottom: 20px;
+  }
+
+  form {
+    gap: 15px;               /* slightly smaller gap */
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 14px;         /* smaller font */
+    padding: 12px 15px;      /* smaller padding */
+  }
+
+  button {
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 40px;
+    max-width: 95vw;
+  }
+
+  .left-image {
+    height: 180px;
+  }
+
+  .right-form {
+    padding: 20px 15px;
+  }
+
+  .right-form h2 {
+    font-size: 22px;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+}
+

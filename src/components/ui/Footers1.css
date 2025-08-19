@@ -1,0 +1,192 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Base */
+.footer-container {
+  background: black;
+  color: white;
+  padding: 70px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px; /* ✅ reduced for stability */
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 20px 0;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-links li {
+  list-style: none;
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
+  outline: none;
+  border: none;
+}
+
+.footer-links a:hover {
+  color: #00FFFF;
+  text-decoration: none;
+}
+
+.contact-section p {
+  margin: 4px 0;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 6px 0;
+  gap: 6px;
+}
+
+.email-link {
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.email-link:hover {
+  color: #00FFFF;
+  text-decoration: none;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00FFFF;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  color: #00FFFF;
+  font-size: 14px;
+}
+
+/* --------- Responsive Breakpoints --------- */
+
+/* Tablets & below (≤ 768px) */
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 50px 30px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .footer-section {
+    margin: 15px 0;
+  }
+
+  .contact-section p {
+    justify-content: center;
+  }
+}
+
+/* Mid-size phones (≤ 460px) */
+@media (max-width: 460px) {
+  .footer-container {
+    padding: 40px 20px;
+  }
+
+  .footer-logo {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+
+  .footer-links a,
+  .contact-section p,
+  .contact-item,
+  .email-link {
+    font-size: 13px;
+  }
+
+  .social-icons a {
+    font-size: 16px;
+    margin-right: 8px;
+  }
+
+  .footer-bottom {
+    font-size: 13px;
+  }
+}
+
+/* Small phones (≤ 360px) */
+@media (max-width: 360px) {
+  .footer-container {
+    padding: 30px 15px;
+  }
+
+  .footer-logo {
+    width: 100px;
+  }
+
+  .footer-links a,
+  .email-link,
+  .contact-section p {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}
+
+/* Ultra-small devices (≤ 320px) */
+@media (max-width: 320px) {
+  .footer-container {
+    padding: 25px 10px;
+  }
+
+  .footer-logo {
+    width: 90px;
+  }
+
+  .footer-links a,
+  .email-link,
+  .contact-section p {
+    font-size: 11px;
+  }
+
+  .footer-bottom {
+    font-size: 11px;
+  }
+}
