@@ -25,7 +25,7 @@ function MyPage() {
       </div>
  </div>
  <h2 className="career-heading">
-Why Career Counseling is Essential ?
+Why Career Counseling is Essential?
       </h2>
       <Unbiased/>
       <Benifits/>
