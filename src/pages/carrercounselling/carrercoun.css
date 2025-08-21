@@ -125,3 +125,25 @@
   
 }
 
+/* For tablets and smaller devices (e.g., screen width <= 768px) */
+@media (max-width: 768px) {
+  .career-heading h2 {
+    font-size: 2rem;   /* Reduced font size for tablets */
+    text-align: center; /* Often looks better centered on smaller screens */
+  }
+}
+
+/* For mobile phones (e.g., screen width <= 480px) */
+@media (max-width: 480px) {
+  .career-heading h2 {
+    font-size: 1.18rem; /* Even smaller font size for phones */
+    margin-bottom: 20px; /* Optional: reduce the space below the heading */
+  }
+}
+@media (max-width: 360px) {
+  .career-heading h2 {
+    font-size: 1rem; /* Even smaller font size for phones */
+    margin-bottom: 20px; /* Optional: reduce the space below the heading */
+  }
+}
+
