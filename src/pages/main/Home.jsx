@@ -41,7 +41,7 @@ const Home = () => {
           </h2>
           <p>Elevate Your Future with Every Click</p>
           <h3>
-            <span className="highlight-orange">100% Placement</span> or Refund
+            <span className="highlight-orange">100 % Placement</span> or Refund
           </h3>
           <button className="cta-button">Get Placed</button>
         </div>
