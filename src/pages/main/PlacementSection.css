@@ -153,3 +153,24 @@
     white-space: normal;
   }
 }
+/* --- Responsive Styles --- */
+
+/* This targets tablets and mobile devices */
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 1.5rem; /* Adjust this value to your preference */
+    text-align: center; /* Optional: centers the header on small screens */
+  }
+}
+
+/* You can add another breakpoint for even smaller mobile screens if needed */
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 1.25rem; /* Make it even smaller for phones */
+  }
+}
+@media (max-width: 360px) {
+  .section-header h2 {
+    font-size: 0.9rem; /* Make it even smaller for phones */
+  }
+}
