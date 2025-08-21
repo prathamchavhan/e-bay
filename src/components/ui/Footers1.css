@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -5,29 +6,42 @@ body {
   box-sizing: border-box;
 }
 
-/* Footer Base */
+/* ==========================================================================
+   Desktop First Styles (Default)
+   ========================================================================== */
+
+
 .footer-container {
   background: black;
   color: white;
-  padding: 70px;
+  padding: 30px;
 }
 
+/* --- MODIFICATION FOR CENTERING THE MIDDLE CONTAINER --- */
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* MODIFIED: This spaces all sections evenly, centering the middle one. */
   flex-wrap: wrap;
-  gap: 60px; /* ✅ reduced for stability */
+  gap: 16rem; /* Adjusted gap for a balanced layout */
+  align-items: flex-start; /* Aligns sections to the top */
 }
 
 .footer-section {
-  flex: 1;
+  flex: 1; /* Allows sections to grow and shrink evenly */
   min-width: 220px;
-  margin: 20px 0;
+  text-align: center; /* Centers all inline content like logo, text, links */
 }
+
+/* The rule for margin-left: auto on the last child has been removed */
 
 .footer-logo {
   width: 150px;
+  height: 40px;
   margin-bottom: 20px;
+}
+
+.footer-links {
+  padding-left: 0;
 }
 
 .footer-links li {
@@ -39,29 +53,32 @@ body {
   color: white;
   text-decoration: underline;
   font-size: 14px;
-  outline: none;
-  border: none;
 }
 
-.footer-links a:hover {
-  color: #00FFFF;
-  text-decoration: none;
-}
+/* ==========================================================================
+   STYLES FOR CONTACT SECTION
+   ========================================================================== */
 
-.contact-section p {
-  margin: 4px 0;
-  font-size: 14px;
+/* This makes the entire contact section a flex container,
+   arranging its children (logo, email, phone, address) in a column
+   and centering them horizontally. */
+.contact-section {
   display: flex;
-  align-items: center;
-  gap: 9px;
+  flex-direction: column;
+  align-items: center; /* Horizontally centers all items */
+  gap: 12px;           /* Consistent spacing between items */
 }
 
-.contact-item {
-  display: flex;
+/* This targets the individual rows (email, phone, address) to ensure
+   the icon and text are aligned correctly. */
+.contact-section .d-flex {
   align-items: center;
-  font-size: 14px;
-  margin: 6px 0;
-  gap: 6px;
+  text-align: left; /* Aligns multi-line text (like the address) to the left */
+}
+
+/* Ensures the location icon aligns with the first line of the address. */
+.contact-section .d-flex.align-items-start {
+  align-items: flex-start;
 }
 
 .email-link {
@@ -72,6 +89,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  justify-content: center;
 }
 
 .email-link:hover {
@@ -90,6 +108,18 @@ body {
   color: #00FFFF;
 }
 
+/* Removing default outline for focused links and buttons */
+.footer-links a:focus,
+.footer-links a:active,
+.email-link:focus,
+.email-link:active,
+.social-icons a:focus,
+.social-icons a:active {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
@@ -97,96 +127,81 @@ body {
   font-size: 14px;
 }
 
-/* --------- Responsive Breakpoints --------- */
+/* ==========================================================================
+   Responsive Media Queries
+   ========================================================================== */
 
-/* Tablets & below (≤ 768px) */
-@media (max-width: 768px) {
+/* Tablets (landscape) and smaller laptops */
+@media (max-width: 1024px) {
   .footer-container {
-    padding: 50px 30px;
+    padding: 2rem;
   }
+  .footer-content {
+    gap: 1.5rem;
+  }
+  .footer-section {
+    min-width: 180px;
+  }
+}
 
+/* Tablets (portrait) and large phones */
+@media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    gap: 40px;
+    gap: 3rem;
   }
 
-  .footer-section {
-    margin: 15px 0;
+  .footer-section,
+  .contact-section,
+  .social-icons {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    flex: 1 1 auto; /* Reset flex property for vertical stacking */
   }
 
-  .contact-section p {
-    justify-content: center;
-  }
-}
-
-/* Mid-size phones (≤ 460px) */
-@media (max-width: 460px) {
-  .footer-container {
-    padding: 40px 20px;
-  }
-
-  .footer-logo {
-    width: 120px;
-    margin-bottom: 15px;
-  }
-
-  .footer-links a,
-  .contact-section p,
-  .contact-item,
-  .email-link {
-    font-size: 13px;
-  }
-
-  .social-icons a {
-    font-size: 16px;
-    margin-right: 8px;
-  }
-
-  .footer-bottom {
-    font-size: 13px;
+  .social-icons {
+    padding-top: 10px;
   }
 }
 
-/* Small phones (≤ 360px) */
-@media (max-width: 360px) {
+/* Phones */
+@media (max-width: 480px) {
   .footer-container {
-    padding: 30px 15px;
+    padding: 1.2rem;
   }
-
   .footer-logo {
     width: 100px;
   }
-
   .footer-links a,
+  .contact-section span, /* Target the text inside contact items */
   .email-link,
-  .contact-section p {
-    font-size: 12px;
-  }
-
   .footer-bottom {
-    font-size: 12px;
+    font-size: 0.85rem;
+  }
+  .social-icons a {
+    font-size: 1rem;
+    margin-right: 0.6rem;
   }
 }
 
-/* Ultra-small devices (≤ 320px) */
+/* Small phones */
 @media (max-width: 320px) {
   .footer-container {
-    padding: 25px 10px;
+    padding: 0.8rem;
   }
-
   .footer-logo {
-    width: 90px;
+    width: 80px;
   }
-
   .footer-links a,
+  .contact-section span, /* Target the text inside contact items */
   .email-link,
-  .contact-section p {
-    font-size: 11px;
-  }
-
   .footer-bottom {
-    font-size: 11px;
+    font-size: 0.75rem;
+  }
+  .social-icons a {
+    font-size: 0.9rem;
+    margin-right: 0.4rem;
   }
 }
