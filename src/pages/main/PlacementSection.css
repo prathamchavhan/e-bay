@@ -166,7 +166,7 @@
 /* You can add another breakpoint for even smaller mobile screens if needed */
 @media (max-width: 480px) {
   .section-header h2 {
-    font-size: 1.25rem; /* Make it even smaller for phones */
+    font-size: 1rem; /* Make it even smaller for phones */
   }
 }
 @media (max-width: 360px) {
