@@ -66,7 +66,7 @@ const Councontact = () => {
     <div className="container">
       <div className="left-image">
         <img
-          src="/ourprocess/call.png"
+          src="/ourprocess/count.png"
           alt="Contact"
         />
       </div>
