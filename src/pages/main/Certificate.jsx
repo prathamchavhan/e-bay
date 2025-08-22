@@ -32,7 +32,7 @@ const formatINR = (num) => num.toLocaleString("en-IN");
     },
     {
       id: "course-3",
-      title: "Power BI + SQLCourse",
+      title: "Power BI + SQL Course",
       subtitle: "Turn Raw Data into Real Insight",
       image: "images/course/PBSC.png",
       duration: "4 Months",
