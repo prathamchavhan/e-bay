@@ -82,7 +82,7 @@ export default function Header() {
       {/* ✅ Button outside nav-wrapper */}
 
       <div className="head-but">
- <a href="https://datanew1deva.vercel.app/" target="_blank" rel="noopener noreferrer">
+ <a href="https://dataventics.com/" target="_blank" rel="noopener noreferrer">
    DV
   </a>   </div>
 
