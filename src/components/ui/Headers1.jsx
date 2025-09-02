@@ -83,7 +83,7 @@ export default function Header() {
 
       <div className="head-but">
  <a href="https://dataventics.com/" target="_blank" rel="noopener noreferrer">
-   DV services
+   DV Services
   </a>   </div>
 
     </header>
