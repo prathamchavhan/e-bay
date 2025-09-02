@@ -636,4 +636,70 @@ body {
   .btn-outline-green {
     width: 90%;
   }
+} 
+
+        @media (max-width: 350px) {
+           .course-container {
+    width: 60%; /* Use most of the available space */
+    max-width: 960px; /* But don't exceed this width */
+    height: auto;
+    padding-bottom: 20px;
+    margin: 0 auto; /* Centers the container */
 }
+
+            .course-img {
+                width: 90px;
+                height: 30px;
+            }
+
+            .course-sub {
+                width: 30%;
+            }
+
+            .course-buttons {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .btn-green,
+            .btn-outline-green {
+                width: 30%;
+            }
+
+            .cert-rating-number{
+               font-size: 1rem;
+            }
+
+            .cert-title,
+            .cert-title1 {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .cert-desc,
+            .cert-desc1 {
+                font-size: 1rem;
+                text-align: center;
+            }
+
+            .cert-enroll-btn {
+                font-size: 1rem;
+                padding: 10px 15px;
+            }
+
+            .cert-logo-img {
+                width: 40px;
+                height: 25px;
+            }
+
+            .arrow-nav {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .cert-logos-stack1,
+            .cert-logos-stack21,
+            .cert-logos-stack31 {
+                gap: 2px;
+            }
+        }

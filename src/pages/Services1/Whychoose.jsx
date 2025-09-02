@@ -13,7 +13,7 @@ const CareerFeatures = () => {
       title: "Results-Driven Curriculum",
       description:
         "Gain in-demand skills with expert-designed programs, graduating with a portfolio and certification recognized by top employers.",
-      align: "from-right",
+      align: "from-right",                      
     },
     {
       title: "Flexible Learning Experience",
