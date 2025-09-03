@@ -504,6 +504,7 @@ body {
             font-family: inherit;
             transition: border 0.2s, color 0.2s, background 0.2s;
         }
+        
 
         .cert-enroll-btn:hover {
             border: 2.5px solid #000000;
