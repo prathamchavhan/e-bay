@@ -7,6 +7,18 @@ import Unbiased from "./Unbiased";
 import "./carrercoun.css";
 // Optional: for styling
 
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.replace("#", ""));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+
+
+
 function MyPage() {
   return (
     <>
@@ -16,7 +28,7 @@ function MyPage() {
           Empower Your Career <br /> with Expert Guidance
         </h1>
         <p className="subtext">
-          Unlock Your True Potential with Expert Career Counseling
+          Unlock Your True Potential <span class="second-part">with Expert Career Counseling</span>
         </p>
         <p className="offer">
           100% <span className="highlight">Placement</span> or{" "}

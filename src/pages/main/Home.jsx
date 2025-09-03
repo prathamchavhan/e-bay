@@ -4,7 +4,7 @@ import Achiverspage from "./Achiverspage";
 import Placement from"./Placement";
 import Certificate from "./Certificate";
 import Couresboot from "./Couresboot";
-
+import { useNavigate } from "react-router-dom";
 const images = [
   "/images/aashray.png", // replace with your real testimonial image paths in public folder
   "/images/deva.png",
@@ -14,6 +14,7 @@ const images = [
 
 const Home = () => {
   const [currentImage, setCurrentImage] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,6 +22,12 @@ const Home = () => {
     }, 2000); // 3 seconds per slide
     return () => clearInterval(interval);
   }, []);
+
+
+
+    const handleNavigateToPage = () => {
+    navigate("/carrercounselling/Carrercoun"); // make sure route exists
+  };
 
   return (
     <>
@@ -43,7 +50,12 @@ const Home = () => {
           <h3>
             <span className="highlight-orange">100% Placement</span> or Refund
           </h3>
-          <button className="cta-button">Get Placed</button>
+          <button
+      className="cta-button"
+      onClick={() => navigate("/carrercounselling/Carrercoun")} // path of your component
+    >
+      Let's Connect
+    </button>
         </div>
 
         {/* Testimonials */}
