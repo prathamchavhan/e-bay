@@ -23,7 +23,7 @@ function Timepass() {
         />
 
         <div className="content-box">
-          <h2>Boot camp</h2>
+          <h2>Bootcamp</h2>
           <p>
             Launch, advance, or switch careers with hands-on learning and
             real-world projects. Gain industry-ready skills and fast-track your

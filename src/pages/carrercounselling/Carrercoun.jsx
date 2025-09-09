@@ -35,11 +35,23 @@ function MyPage() {
           </p>
         </div>
       </div>
+<<<<<<< HEAD
       <h2 className="career-heading">Why Career Counseling is Essential ?</h2>
       <Unbiased />
       <Benifits />
       <Ourprocess />
       <Councontact />
+=======
+ </div>
+ <h2 className="career-heading">
+Why Career Counseling is Essential?
+      </h2>
+      <Unbiased/>
+      <Benifits/>
+      
+      <Ourprocess/>
+      <Councontact/>
+>>>>>>> 1d45ddde741c77d3767736fd1d623b4278a7e2ba
     </>
   );
 }

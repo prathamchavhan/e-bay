@@ -199,6 +199,13 @@ body {
   .email-link,
   .footer-bottom {
     font-size: 0.75rem;
+<<<<<<< HEAD
+=======
+  }
+  .social-icons a {
+    font-size: 0.9rem;
+    margin-right: 0.4rem;
+>>>>>>> 1d45ddde741c77d3767736fd1d623b4278a7e2ba
   }
   .social-icons a {
     font-size: 0.9rem;

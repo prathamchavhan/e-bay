@@ -46,7 +46,7 @@ const CareerFeatures = () => {
 
   return (
     <div className="main">
-      <div className="head"><h2>Why Choose Our Boot Camps?</h2></div>
+      <div className="head"><h2>Why Choose Our BootCamps?</h2></div>
     <div className="career-features">
      
       {data.map((item, index) => (

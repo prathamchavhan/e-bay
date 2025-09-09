@@ -45,7 +45,7 @@ const navigate = useNavigate();
   const certificates = [
     { 
       id: "cert-1", 
-      title: "100 % Placement Unlocked", 
+      title: "100% Placement Unlocked", 
       desc: "Master top Microsoft tools – SQL, Power BI, Power Automate & Power Apps. Build real projects, gain internship experience, and learn from industry experts. Land your dream job with 100% placement support and unlimited interview calls.", 
       logos: [
   "images/subcou/excel.png",  // ✅ relative path from public folder
