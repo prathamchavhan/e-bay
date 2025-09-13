@@ -82,13 +82,10 @@ export default function Header() {
       {/* ✅ Button outside nav-wrapper */}
 
       <div className="head-but">
-<<<<<<< HEAD
- <a href="http://localhost:5172" target="_blank" rel="noopener noreferrer">
-   DV services
-=======
+ {/* <a href="http://localhost:5172" target="_blank" rel="noopener noreferrer">
+   DV services */}
  <a href="https://dataventics.com/" target="_blank" rel="noopener noreferrer">
    DV Services
->>>>>>> 1d45ddde741c77d3767736fd1d623b4278a7e2ba
   </a>   </div>
 
     </header>
