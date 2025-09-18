@@ -30,10 +30,10 @@ export default function Webtech() {
     </div>
   </div>
 </section>
-
 <div className="bottom-full-image">
   <img src="/images/bottom.png" alt="Profess" />
 </div>
+
 
 
 <div className="okoay">

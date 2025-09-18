@@ -91,14 +91,6 @@
     text-align: left;
     line-height: 1.3;
   }
-<<<<<<< HEAD
-   .subtext {
-    font-size: 1rem;
-    text-align: left;
-  }
-   .subtext .second-part {
-    display: block; /* force second part to new line */
-=======
   .subtext {
     font-size: 0.4rem;
     text-align: left;
@@ -106,7 +98,6 @@
    .offer {
     font-size: 14px;
     text-align: left;
->>>>>>> 1d45ddde741c77d3767736fd1d623b4278a7e2ba
   }
 }
 
