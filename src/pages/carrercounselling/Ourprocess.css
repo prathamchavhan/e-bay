@@ -62,3 +62,17 @@
   border-radius: 0 0 12px 12px;
   width: 100%;
 }
+
+/* --- ✅ NEW: 13-inch Laptop --- */
+@media (max-width: 1280px) {
+  .our-process {
+    margin-bottom: 160px; /* Reduce bottom margin */
+  }
+  .process-grid {
+    gap: 80px 50px; /* Reduce the gap between cards */
+  }
+  .process-image-wrapper {
+    height: 300px;
+    width :200;/* Make images slightly shorter */
+  }
+}

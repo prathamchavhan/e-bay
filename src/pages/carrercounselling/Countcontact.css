@@ -242,3 +242,15 @@ button:hover {
   }
 }
 
+@media (max-width: 1280px) {
+  .container {
+    max-width: 95%; /* Make the container fluid to fit the screen */
+    height: auto;     /* Allow height to adjust to content */
+  }
+  .right-form {
+    padding: 40px; /* Reduce padding slightly */
+  }
+  .right-form h2 {
+    font-size: 28px; /* Slightly smaller heading */
+  }
+}

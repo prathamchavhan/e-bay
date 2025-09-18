@@ -45,7 +45,7 @@ export default function Header() {
   return (
     <header className="header-container">
       <div className="logo-section">
-        <img src="/images/dv learnings.png" alt="Dataventics" className="logo-img" />
+        <img src="/images/dvl.png" alt="Dataventics" className="logo-img" />
       </div>
 
       {/* Mobile menu toggle */}

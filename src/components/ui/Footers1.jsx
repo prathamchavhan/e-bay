@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="footer-content">
         <div className="footer-section">
-          <img src="/images/dv learnings.png" alt="Dataventics Logo" className="footer-logo" />
+          <img src="/images/dvl.png" alt="Dataventics Logo" className="footer-logo" />
           <ul className="footer-links">
            <li><Link to="/policies">Privacy Policy</Link></li>
         <li><Link to="/policies">Refund Policy</Link></li>
