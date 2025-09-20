@@ -54,7 +54,7 @@ export default function Header() {
         onClick={toggleMobileMenu}
         aria-label="Toggle menu"
       >
-        <span></span>
+      
       </button>
 
       {/* Navigation links */}
@@ -87,7 +87,6 @@ export default function Header() {
  <a href="https://dataventics.com/" target="_blank" rel="noopener noreferrer">
    DV Services
   </a>   </div>
-
     </header>
   );
 }
