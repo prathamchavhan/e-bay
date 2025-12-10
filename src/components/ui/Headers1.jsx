@@ -82,7 +82,7 @@ export default function Header() {
 
       <div className="head-but">
  
- <a href="https://dataventics.com/" target="_blank" rel="noopener noreferrer">
+ <a href="https://empoweryoutechnologies.in/" target="_blank" rel="noopener noreferrer">
    E-bay Services
   </a>   </div>
     </header>

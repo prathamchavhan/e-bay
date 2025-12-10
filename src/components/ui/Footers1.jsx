@@ -30,20 +30,19 @@ const Footer = () => {
   <div className="d-flex align-items-center mb-2 gap-2">
     <MdEmail />
     <a href="mailto:contact@dataventics.com" className="email-link text-decoration-none text-white">
-      contact@dataventics.com
+      contact@e-bay.com
     </a>
   </div>
 
   <div className="d-flex align-items-center mb-2 gap-2">
     <MdPhone />
-    <span>+91-9325545392</span>
+    <span>+91-7972063384</span>
   </div>
 
   <div className="d-flex align-items-start gap-2">
     <MdLocationOn className="mt-1" />
     <div>
-      288, 2nd floor, New Nandanvan,<br />
-      Nagpur, MH - 440024
+    Office no 307 - third floor Gini Bellina comeercial complex, Kutwal colony, Lohegoan, Pune, Maharashtra 4110474
     </div>
   </div>
 </div>
@@ -61,7 +60,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        © 2025 | Dataventics Software Solutions Pvt. Ltd.
+        © 2025 | E-bay Software Solutions Pvt. Ltd.
       </div>
     </footer>
   );
