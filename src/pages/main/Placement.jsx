@@ -122,7 +122,7 @@ export default function PlacementSection() {
       <div className="placement-container">
         <div className="section-header">
           <h2>
-            Successfully Placements from <span className="highlight">DV Learningz</span>
+            Successfully Placements from <span className="highlight">E-bay</span>
           </h2>
         </div>
 

@@ -28,8 +28,9 @@ body {
 
 .footer-section {
   flex: 1; /* Allows sections to grow and shrink evenly */
-  min-width: 220px;
-  text-align: center; /* Centers all inline content like logo, text, links */
+  min-width: 20px;
+  text-align: center;
+   /* Centers all inline content like logo, text, links */
 }
 
 /* The rule for margin-left: auto on the last child has been removed */

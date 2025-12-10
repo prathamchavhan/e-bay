@@ -45,10 +45,10 @@ export default function Header() {
   return (
     <header className="header-container">
       <div className="logo-section">
-        <img src="/images/dvl.png" alt="Dataventics" className="logo-img" />
+        <img src="/images/e-bay.png" alt="Dataventics" className="logo-img" />
       </div>
 
-      {/* Mobile menu toggle */}
+     
       <button
         className={`mobile-menu-toggle ${isMobileMenuOpen ? "active" : ""}`}
         onClick={toggleMobileMenu}
@@ -79,13 +79,11 @@ export default function Header() {
         ))}
       </div>
 
-      {/* ✅ Button outside nav-wrapper */}
 
       <div className="head-but">
- {/* <a href="http://localhost:5172" target="_blank" rel="noopener noreferrer">
-   DV services */}
+ 
  <a href="https://dataventics.com/" target="_blank" rel="noopener noreferrer">
-   DV Services
+   E-bay Services
   </a>   </div>
     </header>
   );
